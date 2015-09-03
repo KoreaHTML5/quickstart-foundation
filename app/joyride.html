@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quckstart for UI Bootstrap</title>
+
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="./bower_components/foundation/css/normalize.css">
+  <link rel="stylesheet" href="./bower_components/foundation/css/foundation.css">
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/modernizer.js -->
+  <script src="./bower_components/modernizr/modernizr.js"></script>
+  <!--  endbuild -->
+</head>
+<body>
+
+<!-- Top bar -->
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">파운데이션</a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>메뉴</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="#">설정</a></li>
+      <li class="has-dropdown">
+        <a href="#">프로필</a>
+        <ul class="dropdown">
+          <li><a href="#">내 정보</a></li>
+          <li><a href="#">로그아웃</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="index.html">홈</a></li>
+      <li class="active"><a href="#">Joyride</a></li>
+    </ul>
+  </section>
+</nav>
+
+<!-- Joyride -->
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Joyride</h1>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <div id="firstStop" class="panel">1단계</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 large-offset-4 columns">
+        <div id="secondStop" class="panel">2단계</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 large-offset-8 columns">
+        <div id="thirdStop" class="panel">3단계</div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>
+</div>
+
+
+<ol class="joyride-list" data-joyride>
+  <li data-id="firstStop" data-text="Next" data-options="tip_location: top; prev_button: false">
+    <h4>Stop #1</h4>
+    <p>첫번째 단계입니다.</p>
+  </li>
+  <li data-id="secondStop" data-class="custom so-awesome" data-text="Next" data-prev-text="Prev">
+    <h4>Stop #2</h4>
+    <p>두번째 단계입니다.</p>
+  </li>
+  <li data-id="thirdStop" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+    <h4>Stop #3</h4>
+    <p>세번째 단계입니다.</p>
+  </li>
+  <li data-button="End" data-prev-text="Prev">
+    <h4>종료</h4>
+    <p>종료입니다.</p>
+  </li>
+</ol>
+
+
+
+<footer></footer>
+
+
+
+
+<!-- build:js scripts/vendor.js -->
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/foundation/js/foundation.js"></script>
+<script src="./bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+<script>
+  $(document).foundation('joyride', 'start');
+</script>
+</body>
+</html>
