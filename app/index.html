@@ -52,7 +52,9 @@
 
   <!--Orbit-->
   <div class="row">
+
     <h1>Orbit</h1>
+
     <ul class="example-orbit" data-orbit>
       <li>
         <img src="./images/orbit/slide1.png" alt="slide 1" />
@@ -73,9 +75,77 @@
         </div>
       </li>
     </ul>
+  </div>
+
+  <div class="row">
     <hr/>
   </div>
 
+  <!-- Form -->
+  <form>
+    <div class="row">
+      <h1>Form</h1>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <label>이름
+          <input type="text" placeholder="이름" />
+        </label>
+      </div>
+      <div class="large-4 columns">
+        <label class="error">비밀번호
+          <input type="password" placeholder="비밀번호" />
+        </label>
+        <small class="error">비밀번호를 6자리 이상 입력하세요</small>
+      </div>
+      <div class="large-4 columns">
+        <label>지역
+          <select>
+            <option value="1">서울</option>
+            <option value="2">경기</option>
+            <option value="3">강원</option>
+            <option value="4">충청</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <label>성별</label>
+        <input type="radio" name="sex" value="male" id="sexMale"><label for="sexMale">남자</label>
+        <input type="radio" name="sex" value="female" id="sexFemale"><label for="sexFemale">여자</label>
+      </div>
+      <div class="large-6 columns">
+        <label>자녀</label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">아들</label>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">딸</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>자기 소개
+          <textarea rows="3" placeholder="자기소개를 입력하세요"></textarea>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="row collapse">
+          <div class="small-9 columns">
+            <input type="text" placeholder="검색어를 입력해 보세요">
+          </div>
+          <div class="small-3 columns">
+            <a href="#" class="button postfix">검색</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+    <hr/>
+  </div>
 
   <!-- build:js scripts/vendor.js -->
   <script src="./bower_components/jquery/dist/jquery.js"></script>
